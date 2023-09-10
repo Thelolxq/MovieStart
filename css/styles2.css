@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "boston";
+    src: url(../fonts/Boston.ttf);
+}
+@font-face {
+    font-family: "engine";
+    src: url(../fonts/ENGINE.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 31, 32);
+    height: 100vh;
+    overflow-x: hidden;
+   
+   
+}
+
+
+.logo{
+    width: 125px;
+}
+.contenedor{
+    height: 100px;
+    position: relative ;
+    z-index: 3;
+}
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.192)30%,rgba(50, 49, 63,0));
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    
+}
+#header{
+   
+    transition: background-color .3s ease-out; 
+}
+.navegador{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.lista{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.elementos { 
+   
+    list-style: none;
+    margin-left:30px;
+    list-style: none;
+   
+    
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all ease-in-out .2s;
+    font-size: 1.1em;
+    color: rgb(233, 229, 229);
+    cursor: pointer;
+    
+}
+.elementos:hover{
+    transform: scale(1.05);
+    
+}
+/* boton de busqueda */
+label{
+    position: relative;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    
+}
+input{
+    
+    font-size: .8em;
+    width: 40px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    cursor: pointer;
+    padding-left:30px;
+    transition: .2s ;
+    
+    
+}
+
+input:focus{
+    width: 300px;
+    opacity: 1;
+    
+    
+ 
+}
+.busqueda{
+    left: 2px;
+    position: absolute;
+   width: 25px;
+    cursor: pointer;
+    
+}
+
+/*contenedor main*/
+.contenedor-main{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    z-index: 2;
+}
+    .video{
+        width: 100px;
+        height: 100px;
+    }
+    #videoFondo{
+        width: 100%;
+        position: absolute;
+        top: -150px;
+        object-fit: cover;
+    }
+  
+  .degradado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(31,31,32);
+    background: linear-gradient(0deg, rgb(31, 31, 32) 0%, rgba(8, 8, 15, 0.856) 30%, rgba(31,31,32,0.0) 100%);
+  }
+
+
+
+/* empieza estilizacion de imagenes */
+.encabezado{
+    position: relative;
+    top: 38vw;
+    left: 5%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.title{
+    top:0;
+    color: white;
+    margin-left:30px;
+}
+.contain{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagen{
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    transition: all .2s ease;
+    
+}
+.divCont{
+    padding: .25rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/play_9520245.png");
+    background-size: 100px;
+    background-color:rgb(20, 20, 20) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px black;
+    
+}
+.imagen:hover{
+    transform: scale(1.05);
+    box-shadow:  0 0 10px black;
+    opacity: .1;
+    
+}
+
+
+/*titulo*/
+
+
+
+/*descripcion*/
+h2{
+    position: absolute;
+    color: white;
+    font-family: boston;
+    font-size: 3em;
+    top: 30%;
+    left: 10%;
+
+}
+p{
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 40%;
+    left: 5%;
+    width: 30%;
+    font-size: 1.1em;
+}
+/*pie de pagina*/
+.pie-pagina
+{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 300vh;
+    width: 100%;
+    height: 200px;
+    display: flex;
+   
+
+    
+}
+.lista-pie{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    top: 40%;
+    left: 30%;
+}
+.elementos-pie{
+    
+    margin-left: 10px;
+    list-style: none;
+    color: rgb(216, 216, 216);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.elementos-pie:hover{
+    border-bottom:1px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+h3{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: rgb(214, 210, 210);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (max-width:1500px){
+
+   
+    .slider{
+        --items-per-screen:5;
+    }
+    .slider2{
+        --items-per-screen:5;
+    }
+    .slider3{
+        --items-per-screen:5;
+    }
+}
+@media (max-width:1000px){
+    
+    #videoFondo{
+        height: 100vw;
+    }
+    .slider{
+        --items-per-screen:4;
+    }
+    .slider2{
+        --items-per-screen:4;
+    }
+    .slider3{
+        --items-per-screen:4;
+    }
+    .title{
+        top: -20vw;
+    }
+    .title-2{
+        top: -30vw;
+    }
+    .title-3{
+        top: -40vw;
+    }
+    .contain{
+        top: 75%;
+    }
+    .contain2{
+        top: 95%;
+    }
+    .contain3{
+        top: 116%;
+    }
+    h2{
+        top: 20%;
+    }
+    p{
+        top: 30%;
+        width: 300px;
+    }
+    .barra-progreso{
+        top: -170px;
+    }
+    .barra-progreso2{
+        top: -270px;
+    }
+    .barra-progreso3{
+        top: -370px;
+    }
+}
+@media (max-width:500px){
+    .slider{
+        --items-per-screen:3;
+    }
+    .slider2{
+        --items-per-screen:3;
+    }
+    .slider3{
+        --items-per-screen:3;
+    }
+    .title{
+        top: -20vw;
+    }
+    .title-2{
+        top: -20vw;
+    }
+    .title-3{
+        top: -20vw;
+    }
+    .contain{
+        top: 80%;
+    }
+    .contain2{
+        top: 106%;
+    }
+    .contain3{
+        top: 136%;
+    }
+}
