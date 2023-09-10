@@ -15,6 +15,7 @@ body {
     background-color: rgb(34, 33, 33);
 }
 
+/* Estilos para pantallas grandes */
 header {
     background-color: rgba(255, 255, 255, 0);
     opacity: 1;
@@ -45,7 +46,7 @@ header {
         margin-right: 25px;
         padding: 3px;
         text-decoration: none;
-        color:$color-subtitulos;
+        color: $color-subtitulos;
     }
 
     a:hover {
@@ -57,6 +58,31 @@ header {
         border-radius: 3px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px;
+        text-align: end;
+    }
+
+    .title {
+        font-size: large;
+        width: auto;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    a {
+        margin: 5px 0;
+    }
+}
+
 
 
 @mixin informacion{
@@ -140,22 +166,6 @@ h1{
     margin-top: 70px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .images-container {
     margin-top: 50px;
     display: inline-block;
@@ -178,7 +188,4 @@ h1{
     border-radius: 0;
     filter: blur(2px);
 
-    .ver-detalles{
-        
-    }
 }
