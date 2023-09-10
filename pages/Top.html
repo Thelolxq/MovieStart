@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>MovieStart</title>
 </head>
 <body>
@@ -22,24 +22,16 @@
                     <li class="elementos"><a href="./Top.html">Top</a></li>
                 </ul>
                 
-               
+                
             </nav>
         </header>
     </div>
-    <div class="container">
-        <h1 class="titulo-nombre">Películas en tendencia</h1>
-        <div id="movie-tendencia" class="content">
-            <!-- Aquí se mostrarán las imágenes de las películas -->
-        </div>
+    
+    <h1 class="titulo-nombre">Top peliculas y series</h1>
+    <div style="width: 80%; margin: 0 auto;">
+        <canvas id="graficaCalificaciones"></canvas>
     </div>
 
-    <div class="container">
-        <h1 class="titulo-nombre" >Series en tendencia</h1>
-        <div id="series-tendencia" class="content">
-            <!-- Aquí se mostrarán las imágenes de las series -->
-        </div>
-    </div>
-
-    <script src="../js/tendencias.js"></script>
+    <script src="../js/top.js"></script>
 </body>
 </html>
