@@ -1,0 +1,208 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: rgb(31, 31, 32);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.logo{
+  width: 125px;
+}
+.contenedor1{
+  height: 100px;
+  position: relative ;
+  z-index: 3;
+}
+.header{
+  background: linear-gradient(rgba(0, 0, 0, 0.192)30%,rgba(50, 49, 63,0));
+  position: fixed;
+  height: 70px;
+  width: 100vw;
+  
+}
+#header{
+ 
+  transition: background-color .3s ease-out; 
+}
+.navegador{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-left: 50px;
+}
+.lista{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.elementos { 
+ 
+  list-style: none;
+  margin-left:30px;
+  list-style: none;
+ 
+  
+}
+a{
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: all ease-in-out .2s;
+  font-size: 1.1em;
+  color: rgb(233, 229, 229);
+  cursor: pointer;
+  
+}
+.elementos:hover{
+  transform: scale(1.05);
+  
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  
+}
+
+.movie {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 0%;
+}
+.movie img {
+  max-width: 200px; /* Ancho máximo de la imagen */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px; /* Espacio entre la imagen y la información */
+}
+.movie h2 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 300px;
+  position: relative;
+  color: #ff503c;
+}
+.movie p {
+  font-size: 16px;
+  margin: 5px 0;
+  padding-top: 5px;
+  color: rgb(233, 222, 208);
+}
+.movie strong {
+  font-weight: bold;
+  color: #009447;
+}
+.movie .estrella {
+  width: 15px;
+  height: 14px;
+  padding-top: 3px;
+}
+.movie .datos {
+  margin: 20px;
+  width: 75%;
+  padding-top: 15px;
+}
+
+.serie {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 0%;
+}
+.serie img {
+  max-width: 200px; /* Ancho máximo de la imagen */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px; /* Espacio entre la imagen y la información */
+}
+.serie h2 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 300px;
+  position: relative;
+  color: #ff503c;
+}
+.serie p {
+  font-size: 16px;
+  margin: 5px 0;
+  padding-top: 5px;
+  color: rgb(233, 222, 208);
+}
+.serie strong {
+  font-weight: bold;
+  color: #009447;
+}
+.serie .estrella {
+  width: 15px;
+  height: 14px;
+  padding-top: 3px;
+}
+.serie .datos {
+  margin: 20px;
+  width: 75%;
+  padding-top: 15px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  padding-top: 25px;
+  margin-left: 25px;
+}
+
+.img-info:hover {
+  transform: scale(1.1); /* Cambia el tamaño de la imagen al pasar el mouse (ajusta según sea necesario) */
+  transition: 0.3s;
+}
+
+.raiting {
+  float: right;
+}
+
+.raiting strong {
+  color: #00E06B;
+}
+
+.comentario {
+  margin-top: 70px;
+}
+
+.images-container {
+  margin-top: 50px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 17px;
+}
+
+.images-container img {
+  width: 200px;
+  height: 300px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.images-container img:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Cambia el tamaño de la imagen al pasar el mouse (ajusta según sea necesario) */
+  transition: 0.3s;
+  border-radius: 0;
+  filter: blur(2px);
+}
+
+/*# sourceMappingURL=styles.css.map */
